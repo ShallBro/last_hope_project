@@ -13,7 +13,7 @@ services:
     networks:
       - postgres
   storedayz-backend:
-    build: store_DayZ
+    build: backend_module
     ports:
       - "9090:9090"
     depends_on:
@@ -21,7 +21,7 @@ services:
     networks:
       - postgres
   frontend-container:
-    build: dayz-online-shop
+    build: frontend_module
     ports:
       - "3000:3000"
     networks:
