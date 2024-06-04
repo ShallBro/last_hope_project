@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "12345"
     volumes:
-      - ./store_DayZ/src/main/resources/scripts:/docker-entrypoint-initdb.d
+      - ./backend_module/src/main/resources/scripts:/docker-entrypoint-initdb.d
     ports:
       - "25432:5432"
     networks:
